@@ -38,7 +38,7 @@
     </head>
     <body>
       <div class="main_page">
-        <h1>Comandos Básicos</h1>
+        <h1>Comandos Básicos - Linux Ubuntu</h1>
       <p>Lista de comandos adquiridas no curso
         <a href="https://www.alura.com.br/curso-online-linux-ubuntu">
            “Linux I: Conhecendo e utilizando o terminal”</a>.
@@ -46,6 +46,7 @@
          <a href="https://www.alura.com.br/cursos-online-infraestrutura/redes">“Administradores de Redes”</a>,
           ministrado pela <a href="http://alura.com.br">alura</a>.</p>
           <ol>
+              <li><strong>comando --help</strong> - exibe informações sobre o comando</li>
               <li><strong>pwd</strong> - informa em que diretório está</li>
               <li><strong>ls</strong> - lista os arquivos e diretórios, dentro do diretório atual.</li>
               <li><strong>echo</strong> - imprime na tela</li>
@@ -53,13 +54,62 @@
               <li><strong>echo “texto novo” >> nomeDoArquivo.txt</strong> acrescenta a palavra "novo" no arquivo nomeDoArquivo.txt </li>
               <li><strong>cat</strong> - recebe o nome do arquiv como argumento e imprime seu conteúdo, exemplo: cat lista.txt</li>
               <li><strong>cat *.txt</strong>descreve todos os arquios .txt</li>
+              <li><strong>head nomeDoArquivo.txt</strong> - exibe as dez primeiras linhas do arquivo</li>
+              <li><strong>head -n 3 nomeDoArquivo.txt</strong> - exibe as 3 primeiras linhas do arquivo</li>
+              <li><strong>tail nomeDoArquivo.txt</strong> - exibe as dez últimas linhas do arquivo, também aceita o argumento -n</li>
+              <li><strong>less nomeDoArquivo.txt</strong> - abre o arquivo no terminal, podendo ser fechado com a tecla q</li>
+              <li><strong>touch nomeDoArquivo.txt</strong> - toca no arquivo, alterando a data de edição</li>
+              <li><strong>vi nomeDoArquivo.txt</strong> - permite editar o arquivo direto do terminal</li>
+              <hr>
+              <p>tecla i para inserir texto na posição atual;</p><br>
+              <p>tecla a para inserir texto no caracter seguinte;</p><br>
+              <p>tecla A para inserir texto no final da linha;</p><br>
+              <p>tecla x para remover um caracter, pode receber um número antes do x para deletar mais de um caractar por vez;</p><br>
+              <p>tecla Esc para sair do modo de edição;</p><br>
+              <p>tecla G move o cursor para a última linha;</p><br>
+              <p>teclas 0G1G move o cursor para a primeira linha;</p><br>
+              <p>teclas 7G move o cursor para a sétima linha (7 representa qualquer número);</p><br>
+              <p>teclas dd para remover uma linha inteira;</p><br>
+              <p>teclas yy para copiar uma linha inteira;</p><br>
+              <p>teclas 9yy para copiar nove linhas (9 representa qualquer número);</p><br>
+              <p>tecla p para colar;</p><br>
+              <p>teclas 4p para colar quatro vezes o mesmo conteúdo (4 representa qualquer número);</p><br>
+              <p>utilizar as teclas de seta para navegar pelo documento;</p><br>
+              <p>tecla : para habilitar linha de comando;</p><br>
+              <p>comando w para salvar (w=write);</p><br>
+              <p>comando q para sair (q=quit);</p><br>
+              <p>comando q! para sair sem salvar;</p><br>
+              <p>comando wq para sair e salvar;</p><br>
+
+              <p>tecla /nomeDaPalvra realiza uma busca por nomeDaPalvra (n vai para a próxima ocorrencia; N volta para a ocorrencia anterior);</p><br>
+              <hr>
               <li><strong>clear</strong> - Limpa a tela do terminal.(atalho CTRL+L)</li>
               <li><strong>man</strong> - Exibe o manual do comando, exmplo: man ls - exibe o manual do ls </li>
               <li><strong>cd</strong> - muda de diretório (change directory), exemplo: cd /c/documentos, porém, cd sem argumentos nos leva para o dirtório base</li>
               <li><strong>ls /</strong> - visualiza o diretório raiz</li>
               <li><strong>mkdir</strong> - cria novo diretório, recebe o nome do diretório exemplo: mkdrir pasta</li>
+              <li><strong>rm arquivo.txt</strong> - remove o arquivo com nome arquivo.txt</li>
               <li><strong>rmdir</strong> - remove diretório vazio</li>
               <li><strong>rm -r</strong> - para remover diretório com algum conteúdo</li>
+              <li><strong>cp</strong> - copia o conteúdo de um arquivo em outro, obs.: para cp copiar um diretório, com conteúdo, é preciso utilizar o argumento -r</li>
+              <li><strong>mv</strong> - move o arquivo ex.: mv arq.txt novoDiretorio</li>
+              <li><strong>zip nomeArq.zip nomeDir</strong> - compacta o diretório nomeDir, criando um arquivo nomeArq.zip</li>
+              <li><strong>zip -r nomeArq.zip nomeDir</strong> - utiliza-se o -r para compactar tudo que está dentro do diretório</li>
+              <li><strong>zip -rq nomeArq.zip nomeDir</strong> - o argumento q resume as informações na tela</li>
+              <li><strong>unzip</strong> - descompacta os arquivos</li>
+              <li><strong>unzip -l</strong> - lista o conteúdo do arquivo</li>
+              <li><strong>tar -czf nomeDoArquivo.tar.gz nomeDoDiretorio</strong> - compacta o diretorio gerando um arquivo .tar.gz </li>
+              <hr>
+              <p>c - cria; z - zipa; f - file, ou seja, nome do arquivo</p>
+              <hr>
+              <li><strong>tar -xzf nomeDoArquivo.tar.gz</strong> - para descompactar</li>
+              <li><strong>tar -vxzf nomeDoArquivo.tar.gz</strong> - o argumento v, mostra detalhes do processo</li>
+              <li><strong>tar -cjf nomeDoArquivo.tar.bz2 nomeDoDiretorio</strong> - forma mais eficiente de compactar, pode levar mais tempo</li>
+              <li><strong></strong></li>
+              <li><strong></strong></li>
+              <li><strong></strong></li>
+              <li><strong></strong></li>
+              <li><strong></strong></li>
               <li><strong></strong></li>
               <li><strong></strong></li>
               <li><strong></strong></li>
